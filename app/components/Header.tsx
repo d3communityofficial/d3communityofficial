@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header className='flex justify-between items-center px-2'>
       <div className='flex items-center gap-4'>
-        <div className='w-12 h-12 rounded-2xl bg-gradient-to-br from-dark-primary to-purple-600 text-white flex items-center justify-center font-bold text-2xl shadow-lg border border-white/10'>
+        <div className='w-12 h-12 rounded-2xl text-white flex items-center justify-center font-bold text-2xl shadow-lg border border-white/10' style={{ background: 'var(--gradient-primary)' }}>
           D3
         </div>
         <div>

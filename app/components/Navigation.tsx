@@ -5,7 +5,7 @@ export default function Navigation() {
         <div className='w-2 h-2 rounded-full bg-dark-primary shadow-[0_0_10px_#6366f1]'></div>
         <span className='hidden sm:inline'>Home</span>
       </a>
-      <div className='h-4 w-px bg-white/80'></div>
+      <div className='h-4 w-px divider-dark-bg'></div>
       <a href='#events' className='text-sm font-medium text-dark-muted hover:text-white transition-colors'>
         Events
       </a>

@@ -1,73 +1,175 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @layer theme {
   :root {
     /* Font */
     --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
-    
+
     /* Custom border radius */
     --radius-bento: 1.5rem;
   }
 
   /* Dark Theme (Default) */
   [data-theme='dark'] {
-    --color-bg: #020617;
-    --color-card: #0f172a;
-    --color-card-hover: #1e293b;
-    --color-border: #1e293b;
-    --color-primary: #6366f1;
-    --color-secondary: #fbbf24;
+    /* Base Colors */
+    --color-bg: #020817;
+    --color-card: #0a1628;
+    --color-card-hover: #132338;
+    --color-border: #1a2d47;
+
+    /* Brand Colors */
+    --color-primary: #004aad;
+    --color-primary-light: #0066ff;
+    --color-primary-dark: #003580;
+    --color-secondary: #ffa726;
+    --color-secondary-light: #ffb74d;
+
+    /* Divider Colors */
+    --color-divider: #f8fafc;
+
+    /* Text Colors */
     --color-text: #f8fafc;
     --color-muted: #94a3b8;
-    --color-gradient-from: #111827;
-    --color-nav-glass: rgba(15, 23, 42, 0.7);
+
+    /* Gradient Colors */
+    --color-gradient-from: #0f172a;
+    --color-nav-glass: rgba(10, 22, 40, 0.7);
+
+    /* Gradient Definitions */
+    --gradient-primary: linear-gradient(135deg, #004aad 0%, #0066ff 100%);
+    --gradient-primary-soft: linear-gradient(135deg, rgba(0, 74, 173, 0.1) 0%, rgba(0, 102, 255, 0.1) 100%);
+    --gradient-hero: linear-gradient(135deg, #003580 0%, #004aad 50%, #0066ff 100%);
+    --gradient-card: linear-gradient(180deg, rgba(0, 74, 173, 0.15) 0%, rgba(10, 22, 40, 0.8) 100%);
+    --gradient-accent: linear-gradient(135deg, #ffa726 0%, #ff9800 100%);
   }
 
   /* Light Theme */
   [data-theme='light'] {
-    --color-bg: #ffffff;
-    --color-card: #f8fafc;
+    /* Base Colors */
+    --color-bg: #f8fafc;
+    --color-card: #ffffff;
     --color-card-hover: #f1f5f9;
     --color-border: #e2e8f0;
-    --color-primary: #6366f1;
-    --color-secondary: #f59e0b;
+
+    /* Brand Colors */
+    --color-primary: #004aad;
+    --color-primary-light: #0066ff;
+    --color-primary-dark: #003580;
+    --color-secondary: #ff9800;
+    --color-secondary-light: #ffa726;
+
+    /* Divider Colors */
+    --color-divider: #003580;
+
+    /* Text Colors */
     --color-text: #0f172a;
     --color-muted: #64748b;
+
+    /* Gradient Colors */
     --color-gradient-from: #e2e8f0;
-    --color-nav-glass: rgba(248, 250, 252, 0.7);
+    --color-nav-glass: rgba(255, 255, 255, 0.8);
+
+    /* Gradient Definitions */
+    --gradient-primary: linear-gradient(135deg, #004aad 0%, #0066ff 100%);
+    --gradient-primary-soft: linear-gradient(135deg, rgba(0, 74, 173, 0.08) 0%, rgba(0, 102, 255, 0.08) 100%);
+    --gradient-hero: linear-gradient(135deg, #003580 0%, #004aad 50%, #0066ff 100%);
+    --gradient-card: linear-gradient(180deg, rgba(0, 74, 173, 0.05) 0%, rgba(255, 255, 255, 0.9) 100%);
+    --gradient-accent: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
   }
 }
 
 @layer utilities {
   /* Background colors */
-  .bg-dark-bg { background-color: var(--color-bg); }
-  .bg-dark-card { background-color: var(--color-card); }
-  .bg-dark-card-hover { background-color: var(--color-card-hover); }
-  .bg-dark-primary { background-color: var(--color-primary); }
-  .bg-dark-secondary { background-color: var(--color-secondary); }
-  
+  .bg-dark-bg {
+    background-color: var(--color-bg);
+  }
+  .bg-dark-card {
+    background-color: var(--color-card);
+  }
+  .bg-dark-card-hover {
+    background-color: var(--color-card-hover);
+  }
+  .bg-dark-primary {
+    background-color: var(--color-primary);
+  }
+  .bg-dark-secondary {
+    background-color: var(--color-secondary);
+  }
+
   /* Text colors */
-  .text-dark-text { color: var(--color-text); }
-  .text-dark-muted { color: var(--color-muted); }
-  .text-dark-primary { color: var(--color-primary); }
-  .text-dark-secondary { color: var(--color-secondary); }
-  
+  .text-dark-text {
+    color: var(--color-text);
+  }
+  .text-dark-muted {
+    color: var(--color-muted);
+  }
+  .text-dark-primary {
+    color: var(--color-primary);
+  }
+  .text-dark-secondary {
+    color: var(--color-secondary);
+  }
+
   /* Border colors */
-  .border-dark-border { border-color: var(--color-border); }
-  .border-dark-primary { border-color: var(--color-primary); }
-  .border-dark-secondary { border-color: var(--color-secondary); }
-  
+  .border-dark-border {
+    border-color: var(--color-border);
+  }
+  .border-dark-primary {
+    border-color: var(--color-primary);
+  }
+  .border-dark-secondary {
+    border-color: var(--color-secondary);
+  }
+
   /* Border radius */
-  .rounded-bento { border-radius: var(--radius-bento); }
-  
+  .rounded-bento {
+    border-radius: var(--radius-bento);
+  }
+
+  /* Divider bg color */
+  .divider-dark-bg {
+    background-color: var(--color-divider);
+  }
+
+  /* Gradient backgrounds */
+  .bg-gradient-primary {
+    background: var(--gradient-primary);
+  }
+  .bg-gradient-primary-soft {
+    background: var(--gradient-primary-soft);
+  }
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+  .bg-gradient-card {
+    background: var(--gradient-card);
+  }
+  .bg-gradient-accent {
+    background: var(--gradient-accent);
+  }
+
   /* Hover states */
-  .hover\:bg-dark-card-hover:hover { background-color: var(--color-card-hover); }
-  .hover\:text-dark-primary:hover { color: var(--color-primary); }
-  .hover\:border-dark-primary:hover { border-color: var(--color-primary); }
-  .hover\:border-dark-secondary:hover { border-color: var(--color-secondary); }
-  .group:hover .group-hover\:text-dark-primary { color: var(--color-primary); }
-  .group:hover .group-hover\:border-dark-primary { border-color: var(--color-primary); }
-  .group:hover .group-hover\:border-dark-secondary { border-color: var(--color-secondary); }
+  .hover\:bg-dark-card-hover:hover {
+    background-color: var(--color-card-hover);
+  }
+  .hover\:text-dark-primary:hover {
+    color: var(--color-primary);
+  }
+  .hover\:border-dark-primary:hover {
+    border-color: var(--color-primary);
+  }
+  .hover\:border-dark-secondary:hover {
+    border-color: var(--color-secondary);
+  }
+  .group:hover .group-hover\:text-dark-primary {
+    color: var(--color-primary);
+  }
+  .group:hover .group-hover\:border-dark-primary {
+    border-color: var(--color-primary);
+  }
+  .group:hover .group-hover\:border-dark-secondary {
+    border-color: var(--color-secondary);
+  }
 }
 
 body {
@@ -95,12 +197,12 @@ body {
 
 .bento-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 0 30px -10px rgba(99, 102, 241, 0.15);
-  border-color: rgba(99, 102, 241, 0.3);
+  box-shadow: 0 0 40px -10px rgba(0, 74, 173, 0.4);
+  border-color: var(--color-primary);
 }
 
 .text-gradient {
-  background: linear-gradient(to right, #818cf8, #c084fc);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
