@@ -2,6 +2,14 @@
 
 # Screenshots (Required):
 
+### Web (light mode):
+
+### Web (dark mode):
+
+### Mobile (light mode):
+
+### Mobile (dark mode):
+
 # Types of changes
 
 - [ ] Bug fix (non-breaking change which fixes an issue)

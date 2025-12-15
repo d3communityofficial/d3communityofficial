@@ -48,15 +48,17 @@ A vibrant tech community that brings together AI Full-Stack Developers to build 
 ## ✨ Features
 
 - 🌓 **Dynamic Theme Switching** - Light and dark modes with smooth transitions
-- 📱 **Fully Responsive** - Optimized for mobile, tablet, and desktop
+- 📱 **Fully Responsive** - Mobile-first design optimized for all devices (mobile, tablet, and desktop)
 - 🎨 **Bento Grid Layout** - Modern card-based design system
 - ⚡ **Lightning Fast** - Built with Next.js 16 and optimized for performance
 - 🎯 **SEO Optimized** - Meta tags and structured data
-- 🔗 **Floating Navigation** - Bottom-anchored pill navigation for easy access
+- 🔗 **Floating Navigation** - Bottom-anchored pill navigation for easy thumb access on mobile
 - 👥 **Team Showcase** - Display core team members with avatars
 - 📅 **Event Management** - Upcoming and past events sections
 - 📊 **Community Stats** - Real-time metrics display
 - 🌍 **Location Info** - Chennai hub information and details
+
+> **Note:** This application is designed to be fully responsive across all devices. All features adapt seamlessly to different screen sizes.
 
 ## 🚀 Setup & Installation
 
@@ -171,11 +173,39 @@ The theme automatically detects your system preference and can be manually toggl
 
 ## 📱 Responsive Design
 
-The website is fully responsive with optimized layouts for:
+The website is **fully responsive** and follows a **mobile-first approach** with optimized layouts for all devices:
 
-- **Mobile**: < 768px (Touch-optimized interface)
+- **Mobile**: < 768px
+  - Touch-optimized interface
+  - Simplified navigation
+  - Stacked card layouts
+  - Optimized font sizes and spacing
+
 - **Tablet**: 768px - 1024px
-- **Desktop**: > 1024px (Enhanced hover effects)
+  - Balanced grid layouts
+  - Enhanced spacing
+  - Optimized for both portrait and landscape
+
+- **Desktop**: > 1024px
+  - Full bento grid layout
+  - Enhanced hover effects
+  - Multi-column layouts
+  - Maximum visual impact
+
+### Testing Responsiveness
+
+When developing or contributing, please test your changes across all breakpoints:
+
+```bash
+# Common device viewports to test:
+- iPhone SE: 375x667
+- iPhone 12/13: 390x844
+- iPad: 768x1024
+- iPad Pro: 1024x1366
+- Desktop: 1440x900 and above
+```
+
+Use browser DevTools to test different screen sizes and ensure all features work correctly on mobile, tablet, and desktop devices.
 
 ## 🚢 Deployment
 
@@ -222,6 +252,10 @@ We welcome contributions from the community! Here's how you can help:
 - Test your changes thoroughly
 - Update documentation as needed
 - Update the PR with the requested details in the PR description
+- **✅ Always test for responsive design** - Verify your changes work on mobile, tablet, and desktop
+- **📱 Mobile-first approach** - Ensure features are functional and look good on smaller screens first
+- Check both light and dark themes
+- Test touch interactions on mobile devices
 
 ## 🔗 Links
 
