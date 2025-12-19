@@ -40,10 +40,14 @@ function RobotModel({ cursorPosition, isMobile }: { cursorPosition: number; isMo
 
   // Adjust scale and position based on mobile/desktop
   const scale = isMobile ? 3.5 : 4.8;
-  const position = isMobile ? [0.3, 0.2, 0] : [1.5, -0.3, 0];
 
   return (
-    <group ref={robotRef} position={position} scale={[scale, scale, scale]} rotation={[0, 0, 0]}>
+    <group
+      ref={robotRef}
+      position={isMobile ? [0.3, 0.2, 0] : [1.5, -0.3, 0]}
+      scale={[scale, scale, scale]}
+      rotation={[0, 0, 0]}
+    >
       <primitive object={clonedScene} />
     </group>
   );
