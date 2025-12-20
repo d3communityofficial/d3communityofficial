@@ -63,7 +63,8 @@ A vibrant tech community that brings together AI Full-Stack Developers to build 
 - 🤝 **Community Partners** - Showcase partner organizations
 - 🏆 **Sponsors Section** - Display sponsor tiers (Platinum, Gold, Silver)
 - 📜 **Mission Logs** - Past event history with 6+ events
-- 🔄 **GitHub Actions CI/CD** - Automated deployment to GitHub Pages
+- � **Contact Us** - Multi-channel contact with social links, contact form, and location info
+- �🔄 **GitHub Actions CI/CD** - Automated deployment to GitHub Pages
 
 > **Note:** This application is designed to be fully responsive across all devices. All features adapt seamlessly to different screen sizes.
 
@@ -93,13 +94,28 @@ Using npm:
 npm install
 ```
 
-3. **Run the development server**
+3. **Configure the Contact Form (Optional)**
+
+To enable direct email sending from the contact form:
+
+```bash
+# Copy the example env file
+cp .env.local.example .env.local
+
+# Get your free Web3Forms access key from https://web3forms.com
+# Then edit .env.local and add your key:
+# NEXT_PUBLIC_WEB3FORMS_KEY=your_access_key_here
+```
+
+> **Note:** The contact form will still work without this setup, but emails won't be sent directly. Users will need to use their email client instead.
+
+4. **Run the development server**
 
 ```bash
 npm run dev
 ```
 
-4. **Open your browser**
+5. **Open your browser**
 
 Navigate to [http://localhost:3000](http://localhost:3000) to see the website.
 
@@ -144,17 +160,23 @@ community-website/
 │   │   ├── Sponsors.tsx           # Sponsors showcase
 │   │   ├── StatsCard.tsx          # Community stats display
 │   │   ├── TeamSection.tsx        # Core team members
-│   │   └── TechStackCard.tsx      # Tech stack icons
+│   │   ├── TechStackCard.tsx      # Tech stack icons
+│   │   └── ContactUs/             # Contact section (complex component)
+│   │       ├── index.tsx          # Main ContactUs component
+│   │       ├── SocialLinks.tsx    # Social media links grid
+│   │       ├── ContactForm.tsx    # Contact form with validation
+│   │       └── ContactInfo.tsx    # Location & community info
 │   │
 │   │   # Component Organization Pattern:
 │   │   # - Simple components: Single .tsx file (e.g., Header.tsx)
 │   │   # - Complex components: Folder with index.tsx + sub-components
 │   │   #
 │   │   # Example for complex component:
-│   │   # └── AboutUS/
-│   │   #     ├── index.tsx          # Main component (exports AboutUS)
-│   │   #     ├── TerminalBlock.tsx     # Sub-component
-│   │   #     ├── NarrativeBlock.tsx # Sub-component
+│   │   # └── ContactUs/
+│   │   #     ├── index.tsx          # Main component (exports ContactUs)
+│   │   #     ├── SocialLinks.tsx    # Sub-component
+│   │   #     ├── ContactForm.tsx    # Sub-component
+│   │   #     └── ContactInfo.tsx    # Sub-component
 │   │
 │   ├── context/             # React Context providers
 │   │   └── ThemeContext.tsx # Theme state management

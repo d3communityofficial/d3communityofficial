@@ -10,6 +10,7 @@ import MissionLogs from './components/MissionLogs';
 import TeamSection from './components/TeamSection';
 import CommunityPartners from './components/CommunityPartners';
 import Sponsors from './components/Sponsors';
+import ContactUs from './components/ContactUs';
 
 export default function Home() {
   return (
@@ -40,6 +41,9 @@ export default function Home() {
 
         {/* Sponsors Section */}
         <Sponsors />
+
+        {/* Contact Us Section */}
+        <ContactUs />
       </div>
     </>
   );
