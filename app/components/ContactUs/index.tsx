@@ -11,49 +11,7 @@ export default function ContactUs() {
       className="px-4 sm:px-6 py-12 sm:py-16"
       aria-labelledby="contact-heading"
     >
-      {/* SEO Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Digital Dreamers Den",
-            "alternateName": "D3 Community",
-            "url": "https://d3communityofficial.github.io/community-website",
-            "logo": "https://d3communityofficial.github.io/community-website/logo.png",
-            "description": "A vibrant tech community that brings together AI Full-Stack Developers to build the future. We host events, workshops, and networking opportunities.",
-            "foundingDate": "2023",
-            "foundingLocation": {
-              "@type": "Place",
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Chennai",
-                "addressCountry": "IN"
-              }
-            },
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "contactType": "General Inquiries",
-              "email": "d3communityofficial@gmail.com",
-              "availableLanguage": "English"
-            },
-            "sameAs": [
-              "https://d3community.in/linkedin",
-              "https://d3community.in/instagram",
-              "https://d3community.in/youtube",
-              "https://d3community.in/x",
-              "https://github.com/d3communityofficial"
-            ],
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Chennai",
-              "addressCountry": "IN"
-            }
-          })
-        }}
-      />
-
+      
       {/* Header */}
       <div className="max-w-7xl mx-auto mb-8 sm:mb-12">
         <h2 
@@ -94,17 +52,6 @@ export default function ContactUs() {
           </div>
         </div>
 
-        {/* Commented out Contact Form - Will be enabled later */}
-        {/* <div className="bg-dark-card rounded-bento border border-dark-border bento-card overflow-hidden">
-          <div className="grid grid-cols-1 lg:grid-cols-2">
-            <div className="p-6 sm:p-8 border-b lg:border-b-0 lg:border-r border-dark-border">
-              <ContactForm />
-            </div>
-            <div className="p-6 sm:p-8">
-              <SocialLinks />
-            </div>
-          </div>
-        </div> */}
 
       </div>
 
