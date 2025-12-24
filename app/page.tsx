@@ -48,7 +48,6 @@ export default function Home() {
           <SocialCard />
           <TechStackCard />
           </div>
-        </div>
         </section>
 
         {/* Secondary Section: Past Logs & Team */}
