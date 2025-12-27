@@ -208,6 +208,8 @@ community-website/
 │   ├── globals.css          # Global styles, theme variables, gradients
 │   ├── layout.tsx           # Root layout with fonts and ThemeProvider
 │   └── page.tsx             # Main landing page
+├── apps/                    # Additional applications/portals
+│   └── lab-portal/          # Lab portal application
 ├── constants/                # Application constants
 │   └── navigation.ts        # Navigation-related constants (sections, items, scroll config)
 ├── public/                  # Static assets (images, fonts, etc.)
