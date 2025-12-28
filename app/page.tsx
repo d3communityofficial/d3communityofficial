@@ -21,10 +21,19 @@ export default function Home() {
         <Header />
         <HeroSection />
 
-        {/* About Us Section */}
-        <About />
+        {/* NEW: Grid Container for About & Social (50% / 50%) */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+          {/* About Section - Takes Left 50% */}
+          <section className="col-span-full md:col-span-2 w-full flex flex-col h-full">
+            <About />
+          </section>
 
-        {/* Social Section*/}
+          {/* Social Section Placeholder - Takes Right 50% */}
+          <section className="col-span-full md:col-span-2 w-full flex flex-col h-full min-h-[300px] border border-dashed border-dark-border rounded-bento bg-dark-card/20 items-center justify-center text-dark-muted">
+            {/* The other developer will put their component here */}
+            <p>Social Section (Reserved)</p>
+          </section>
+        </div>
 
         {/* Main Bento Grid */}
         <div className="flex flex-wrap grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-4 md:gap-6 md:h-[850px]">
