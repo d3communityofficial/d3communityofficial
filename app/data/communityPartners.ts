@@ -1,4 +1,3 @@
-
 export const communityPartners = [
   {
     logo: '/partners/chennai-react.png',
@@ -7,7 +6,7 @@ export const communityPartners = [
   {
     logo: '/partners/react-nexus.png',
     url: 'https://reactnexus.com',
-    invertDark: true,
+    fixedBg: '#000',
   },
   {
     logo: '/partners/techx-conf.png',
@@ -16,6 +15,7 @@ export const communityPartners = [
   {
     logo: '/partners/ctq-talk.png',
     url: 'https://share.google/RC14BQezajq2b38Kd',
+    fixedBg: '#fff',
   },
   {
     logo: '/partners/gdg-chennai.png',
@@ -24,14 +24,10 @@ export const communityPartners = [
   {
     logo: '/partners/nextjs-india.png',
     url: 'https://nextjs.org',
-    invertDark: true,
+    fixedBg: '#000',
   },
   {
     logo: '/partners/vueverse.png',
     url: 'https://vueverse.com',
   },
 ];
-
-
-
-
