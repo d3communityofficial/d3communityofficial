@@ -27,11 +27,11 @@ export default function Home() {
         <section id="home">
           <HeroSection />
         </section>
-        <section className="grid grid-cols-1 md:grid-cols-4 gap-6 pt-16">
-          <div
-            id="about"
-            className="col-span-full md:col-span-2 w-full flex flex-col h-full"
-          >
+        <section
+          id="about-socials"
+          className="grid grid-cols-1 md:grid-cols-4 gap-6 pt-16"
+        >
+          <div className="col-span-full md:col-span-2 w-full flex flex-col h-full">
             <About />
           </div>
 
