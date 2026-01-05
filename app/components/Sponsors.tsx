@@ -12,7 +12,7 @@ export default function Sponsors() {
         Sponsors
       </h2>
 
-      <div className="flex flex-wrap gap-4">
+      <div className="flex flex-wrap gap-4 md:gap-7">
         {sponsors.map((sponsor, index) => (
           <CardSkeleton key={index} url={sponsor.url} fixedBg={sponsor.fixedBg}>
             <div className="absolute -top-6 -left-6 -right-6 -bottom-6 p-4">
