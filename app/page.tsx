@@ -13,6 +13,8 @@ import Sponsors from './components/Sponsors';
 import ContactUs from './components/ContactUs';
 import ContributorsSection from './components/ContributorsSection';
 import { CalendarClock } from 'lucide-react';
+import SocialLinks from './components/ContactUs/SocialLinks';
+import { MessageSquare } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -26,19 +28,13 @@ export default function Home() {
         <section id="home">
           <HeroSection />
         </section>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-          <section
-            id="about"
-            className="col-span-full md:col-span-2 w-full flex flex-col h-full"
-          >
+        <section
+          id="about-socials"
+          className="grid grid-cols-1 md:grid-cols-4 gap-6 pt-16"
+        >
+          <div className="col-span-full md:col-span-2 w-full flex flex-col h-full">
             <About />
-          </section>
-
-          {/* Social Section Placeholder - Takes Right 50% */}
-          <section className="col-span-full md:col-span-2 w-full flex flex-col h-full min-h-[300px] border border-dashed border-dark-border rounded-bento bg-dark-card/20 items-center justify-center text-dark-muted">
-            <p>Social Section (Reserved)</p>
-          </section>
-        </div>
+          </div>
 
         {/* Next Event and Call for Speakers - 50/50 Layout */}
         <section id="events">
@@ -47,6 +43,10 @@ export default function Home() {
             <h2 className="text-2xl md:text-3xl font-bold font-sans text-[var(--color-text)]">
               Events
             </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <NextEventCard />
+            <CallForSpeakers />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <NextEventCard />
@@ -64,29 +64,37 @@ export default function Home() {
           <CallForVolunteers />
         </section>
 
-        {/* Secondary Section: Past Logs & Team */}
-        <section id="team" className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* Past Events */}
+        <section>
+          <PastEventCard/>
+        </section>
+
+        {/* Call for Volunteers */}
+        <section>
+          <CallForVolunteers />
+        </section>
+
+        <section id="mission-logs" className="pt-16">
           <MissionLogs />
-          <TeamSection />
         </section>
 
         {/* Community Partners Section */}
-        <section id="partners">
+        <section id="partners" className="pt-16">
           <CommunityPartners />
         </section>
 
         {/* Sponsors Section */}
-        <section id="sponsors">
+        <section id="sponsors" className="pt-16">
           <Sponsors />
         </section>
 
         {/* Contributors Section */}
-        <section id="contributors">
+        <section id="contributors" className="pt-16">
           <ContributorsSection />
         </section>
 
         {/* Contact Us Section */}
-        <section id="contact">
+        <section id="contact" className="pt-16">
           <ContactUs />
         </section>
       </div>
