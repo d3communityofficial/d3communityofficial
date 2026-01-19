@@ -38,7 +38,7 @@ export default function Home() {
           {/* Social Links Section - Takes Right 50% */}
           <div className="col-span-full md:col-span-2 w-full flex flex-col h-full">
             <div className="space-y-6">
-              <h2 className="text-2xl md:text-3xl font-bold flex items-center gap-2">
+              <h2 className="text-3xl font-bold flex items-center gap-2">
                 <MessageSquare className="w-6 h-6 text-dark-secondary" />
                 Socials
               </h2>
