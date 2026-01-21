@@ -4,7 +4,7 @@ import HeroSection from './components/HeroSection';
 import About from './components/About';
 import NextEventCard from './components/NextEventCard';
 import PastEventCard from './components/PastEventCard';
-import MissionLogs from './components/MissionLogs';
+
 import TeamSection from './components/TeamSection';
 import CommunityPartners from './components/CommunityPartners';
 import CallForSpeakers from './components/CallForSpeakers';
@@ -66,9 +66,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="mission-logs" className="pt-16">
-          <MissionLogs />
-        </section>
+
 
         {/* Community Partners Section */}
         <section id="partners" className="pt-16">
