@@ -43,7 +43,7 @@ export default function ContactUs() {
           >
             d3communityofficial@gmail.com
           </a>{' '}
-          with the subject line "Partnership Inquiry"
+          with the subject line &quot;Partnership Inquiry&quot;
         </p>
       </div>
     </div>

@@ -8,12 +8,12 @@ import { useResponsiveCardsPerView, useCarouselAutoRotate, useCarouselPause } fr
 export default function PastEventCard() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const cardsPerView = useResponsiveCardsPerView();
-  
+
   // Memoize pastEvents to prevent array recreation on every render
   const pastEvents = useMemo(() => {
     return eventsData.pastEvents || [];
   }, []);
-  
+
   const { isPaused, pause, resume, pauseWithResume } = useCarouselPause();
   const carouselRef = useRef<HTMLDivElement>(null);
 
@@ -52,7 +52,7 @@ export default function PastEventCard() {
     callback();
   }, [pauseWithResume]);
 
- 
+
   const handleMouseEnter = useCallback(() => pause(), [pause]);
   const handleMouseLeave = useCallback(() => resume(), [resume]);
 
@@ -81,8 +81,8 @@ export default function PastEventCard() {
   }
 
   return (
-    <div 
-      className="col-span-1 md:col-span-4 rounded-bento p-8 border border-dark-border bento-card flex flex-col relative overflow-hidden group bg-dark-card" 
+    <div
+      className="col-span-1 md:col-span-4 rounded-bento p-8 border border-dark-border bento-card flex flex-col relative overflow-hidden group bg-dark-card"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       role="region"
@@ -99,13 +99,13 @@ export default function PastEventCard() {
         </div>
 
         {/* Carousel Content - Responsive Cards */}
-        <div 
+        <div
           className="relative overflow-hidden mb-6"
           ref={carouselRef}
           role="group"
           aria-label={`Carousel showing ${cardsPerView} of ${pastEvents.length} events`}
         >
-          <div 
+          <div
             className="flex transition-transform duration-300 ease-in-out"
             style={{ transform }}
             aria-live="polite"
@@ -118,7 +118,7 @@ export default function PastEventCard() {
                 rel="noopener noreferrer"
                 key={event.id}
                 className="flex-shrink-0 rounded-bento p-6 border border-dark-border bg-dark-card flex flex-col hover:border-dark-primary transition-all focus:outline-none focus:ring-2 focus:ring-dark-primary focus:ring-offset-2"
-                style={{ 
+                style={{
                   width: cardWidth,
                   marginRight: cardsPerView === 1 || index === pastEvents.length - 1 ? '0' : '1rem'
                 }}
@@ -165,11 +165,10 @@ export default function PastEventCard() {
                 role="tab"
                 aria-selected={index === currentIndex}
                 aria-label={`Go to event ${index + 1} of ${maxIndex + 1}`}
-                className={`w-2 h-2 rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-dark-primary ${
-                  index === currentIndex
+                className={`w-2 h-2 rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-dark-primary ${index === currentIndex
                     ? 'bg-dark-primary w-6'
                     : 'bg-dark-card hover:bg-dark-card-hover border border-dark-border'
-                }`}
+                  }`}
               />
             ))}
           </div>

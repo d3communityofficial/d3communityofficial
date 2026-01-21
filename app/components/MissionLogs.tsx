@@ -2,44 +2,7 @@ import { History } from 'lucide-react';
 import missionLogs from '@/app/data/missionLogs';
 
 export default function MissionLogs() {
-  const logs = [
-    {
-      id: 'LOG_006',
-      title: 'System Design & Scale',
-      description: 'Scaling backend infrastructure for millions of users.',
-      status: 'Completed',
-    },
-    {
-      id: 'LOG_005',
-      title: 'LLMs in Production',
-      description: 'Real-world deployment strategies for AI models.',
-      status: 'Completed',
-    },
-    {
-      id: 'LOG_004',
-      title: 'Microservices Architecture',
-      description: 'Building distributed systems with resilience patterns.',
-      status: 'Completed',
-    },
-    {
-      id: 'LOG_003',
-      title: 'GraphQL at Scale',
-      description: 'Advanced schema design and performance optimization.',
-      status: 'Completed',
-    },
-    {
-      id: 'LOG_002',
-      title: 'Cloud Native Deployment',
-      description: 'Kubernetes orchestration and container strategies.',
-      status: 'Completed',
-    },
-    {
-      id: 'LOG_001',
-      title: 'Community Kickoff',
-      description: 'First meetup establishing our engineering principles.',
-      status: 'Completed',
-    },
-  ];
+
 
   return (
     <div className="md:col-span-3 lg:col-span-2 space-y-6">

@@ -73,22 +73,22 @@ export default function SocialLinks() {
               aria-label={`${platform.name} - ${platform.description}`}
             >
               {/* Gradient Background on Hover */}
-              <div 
+              <div
                 className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-300"
                 style={{ background: `linear-gradient(135deg, ${platform.color}22 0%, ${platform.color}11 100%)` }}
               />
 
               {/* Icon */}
-              <div 
+              <div
                 className="w-14 h-14 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg relative z-10"
-                style={{ 
+                style={{
                   background: 'var(--color-card)',
                   border: '2px solid var(--color-border)'
                 }}
               >
-                <Icon 
-                  className="w-7 h-7 transition-colors duration-300 text-dark-muted group-hover:text-dark-text" 
-                  style={{ 
+                <Icon
+                  className="w-7 h-7 transition-colors duration-300 text-dark-muted group-hover:text-dark-text"
+                  style={{
                     color: `var(--color-text-muted)`,
                   }}
                 />
@@ -106,7 +106,7 @@ export default function SocialLinks() {
 
               {/* Shine Effect */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <div 
+                <div
                   className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"
                   style={{
                     background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent)'
