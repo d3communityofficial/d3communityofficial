@@ -1,4 +1,4 @@
-export type CoreTeamMember  = {
+export type CoreTeamMember = {
   id: string;
   name: string;
   role: string;
@@ -6,14 +6,14 @@ export type CoreTeamMember  = {
   linkedin?: string;
 };
 
-const coreTeam: CoreTeamMember [] = [
+const coreTeam: CoreTeamMember[] = [
   {
     "id": "d3-001",
     "name": "Arjun Kumar",
     "role": "Founder",
     "avatar": "/coreTeam/aravind.jpg",
     "linkedin": "https://www.linkedin.com/in/iamaravindkumar/",
-    
+
   },
   {
     "id": "d3-002",
@@ -68,13 +68,7 @@ const coreTeam: CoreTeamMember [] = [
     "avatar": "/coreTeam/sarvesh.jpg",
     "linkedin": "https://www.linkedin.com/in/sarvesh-m-rao/",
   },
-  {
-    "id": "d3-009",
-    "name": "Yogeshwari S",
-    "role": "Developer",
-    "avatar": "/coreTeam/yogeshwari.jpg",
-    "linkedin": "https://www.linkedin.com/in/yogeshwari-s-uiuxdesigner/",
-  }
+
 ];
 
 export default coreTeam;
