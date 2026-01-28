@@ -43,7 +43,7 @@ export default function MissionLogs() {
 
   return (
     <div className="md:col-span-3 lg:col-span-2 space-y-6">
-      <h2 className="text-2xl font-bold flex items-center gap-2">
+      <h2 className="text-3xl font-bold flex items-center gap-2">
         <History className="w-6 h-6 text-dark-secondary" />
         Mission Logs
       </h2>

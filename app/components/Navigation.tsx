@@ -78,7 +78,7 @@ export default function Navigation() {
   return (
     <>
       {/* Desktop Navigation - Hidden on mobile */}
-      <nav className="hidden md:flex fixed bottom-6 left-1/2 -translate-x-1/2 z-50 nav-glass text-dark-text px-6 py-3 rounded-full border border-dark-border shadow-[0_0_20px_rgba(0,0,0,0.5)] items-center gap-6">
+      <nav className="hidden md:flex fixed bottom-6 left-1/2 -translate-x-1/2 z-50 nav-glass text-dark-text px-6 py-3 rounded-full border border-dark-nav-border shadow-[0_0_20px_rgba(0,0,0,0.5)] items-center gap-6">
         <a
           href="#"
           onClick={(e) => handleNavClick(e, 'home')}

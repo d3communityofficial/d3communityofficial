@@ -111,7 +111,7 @@ import HeroSection from './components/HeroSection';
 import About from './components/About';
 import NextEventCard from './components/NextEventCard';
 import PastEventCard from './components/PastEventCard';
-import MissionLogs from './components/MissionLogs';
+// import MissionLogs from './components/MissionLogs';
 import TeamSection from './components/TeamSection';
 import CommunityPartners from './components/CommunityPartners';
 import CallForSpeakers from './components/CallForSpeakers';
@@ -146,7 +146,7 @@ export default function Home() {
           {/* Social Links Section - Takes Right 50% */}
           <div className="col-span-full md:col-span-2 w-full flex flex-col h-full">
             <div className="space-y-6">
-              <h2 className="text-2xl md:text-3xl font-bold flex items-center gap-2">
+              <h2 className="text-3xl font-bold flex items-center gap-2">
                 <MessageSquare className="w-6 h-6 text-dark-secondary" />
                 Socials
               </h2>
@@ -185,9 +185,9 @@ export default function Home() {
         </section>
 
 
-        <section id="mission-logs" className="pt-16">
+        {/* <section id="mission-logs" className="pt-16">
           <MissionLogs />
-        </section>
+        </section> */}
 
         {/* Community Partners Section */}
         <section id="partners" className="pt-16">
